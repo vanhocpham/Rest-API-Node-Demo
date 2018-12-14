@@ -1,0 +1,14 @@
+//Define Dependences
+const http = require('http');
+
+const app = require('../index');
+const config = require('../config');
+
+//Define Port
+const port = config.PORT;
+
+//create a server 
+const server = http.createServer(app)
+
+//listen a port
+server.listen(port);
